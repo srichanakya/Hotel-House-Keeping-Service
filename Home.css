@@ -1,0 +1,112 @@
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+.container{
+  margin-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto; */
+    grid-auto-flow: column;
+    grid-template-rows: auto auto;
+    background-color: white;
+    border: 2px solid;
+    padding: 10px;
+  }
+  
+
+button{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    background: rgb(255, 145, 0)
+}
+.btn{
+  background: rgb(255, 145, 0);
+  border: 1px solid;
+}
+
+#makeList{
+width: 20%;
+font-size: 13px;
+background: rgb(13, 13, 215);
+color: white;
+}
+
+#noofmades{
+  width: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+label{
+  font-weight: bolder;
+}
+/* table{
+  display: inline;
+  border-collapse: collapse; 
+} */
+
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+p{
+  display: inline;
+}
+table {
+  border-collapse: collapse;
+  display: inline;
+  width: 100%;
+  margin-left: 5%;
+  
+}
+
+
+th, td {
+  padding: 5px;
+}
+
+@media print{
+  body{
+    width: 100%;
+  }
+  .grid-container{
+    visibility: hidden;
+  }
+  button, input, label{
+    visibility: hidden;
+  }
+  
+  #tablearea{
+    width:100%;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    margin-left: 3%;
+    left: 0;
+  }
+}
+
+#se, #unse{
+  width: 10%;
+  display: block;
+font-size: 10px;
+background: rgb(13, 13, 215);
+color: white;
+}
+
+#printbtn{
+  width: 10%;
+font-size: 12px;
+background: rgb(13, 13, 215);
+color: white;
+}
+
